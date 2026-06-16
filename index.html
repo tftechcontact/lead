@@ -28,6 +28,20 @@
             color: #2c2520;
             margin-bottom: 10px;
         }
+        /* Specific rules for the non-cursive About header */
+        .about-heading {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 600;
+            color: #2c2520;
+            margin-top: 20px;
+        }
+        /* Container forcing left alignment for the About text block */
+        .about-block {
+            text-align: left;
+            width: 100%;
+            margin-top: 20px;
+        }
         section {
             padding: 50px 20px;
             width: 100%;
@@ -48,6 +62,7 @@
             width: 100%;
             height: 45px;
             background-color: #1a5f7a; /* Sea blue */
+            margin: 20px 0;
         }
         .section-three, .section-four {
             display: grid;
@@ -88,6 +103,9 @@
             h1 {
                 font-size: 3rem;
             }
+            .about-heading {
+                font-size: 1.8rem;
+            }
         }
     </style>
 </head>
@@ -97,23 +115,25 @@
         <div class="text-container">
             <h1> Pay-Per-Lead Platform </h1>
 
-             <div class="sea-blue-bar"></div>
+            <div class="sea-blue-bar"></div>
     
-                <h1><u> About </u></h1>
-            <hr>
-            <br>
-            <p> Business Model: Exclusive lead generation & appointment setting. 
-                <br> Focus: On delivering vetted customers & appointments to reliable contractors.
-                <br> Lead Types: Outbound homeowner leads. Pre-qualified customers, project details, and budgets.
-                <br> Contractor Types: Residential (Roofing, Remodeling, HVAC, etc.) All home services, repairs, installations, remodeling, specialty trades.
-                <br> &ensp;
-​                Service Areas: Nationwide
-                <br> Pricing Model: Pay-Per-Lead, charged to the contractor (a flat lead fee, not a percentage of the total job earnings).
-                <br> Best For: Established residential contractors.
-                <br> Benefits: Affordable for small contractors and handymen.
-                <br> Phone Verified: Drastically reduces time wasted on fake numbers or uninterested people.
-                <br> Lead Exclusivity: 100% Exclusive (Never shared).
-            </p>
+            <div class="about-block">
+                <h2 class="about-heading"><u> About </u></h2>
+                <hr style="border: 0; height: 1px; background: #2c2520; margin: 10px 0;">
+                <br>
+                <p> Business Model: Exclusive lead generation & appointment setting. 
+                    <br> Focus: On delivering vetted customers & appointments to reliable contractors.
+                    <br> Lead Types: Outbound homeowner leads. Pre-qualified customers, project details, and budgets.
+                    <br> Contractor Types: Residential (Roofing, Remodeling, HVAC, etc.) All home services, repairs, installations, remodeling, specialty trades.
+                    <br> &ensp;
+                    Service Areas: Nationwide
+                    <br> Pricing Model: Pay-Per-Lead, charged to the contractor (a flat lead fee, not a percentage of the total job earnings).
+                    <br> Best For: Established residential contractors.
+                    <br> Benefits: Affordable for small contractors and handymen.
+                    <br> Phone Verified: Drastically reduces time wasted on fake numbers or uninterested people.
+                    <br> Lead Exclusivity: 100% Exclusive (Never shared).
+                </p>
+            </div>
         </div>
     </section>
 
@@ -122,8 +142,6 @@
             <a href="https://buy.stripe.com/mock" style="display: inline-block; background: #635bff; color: #fff; padding: 14px 28px; text-decoration: none; border-radius: 4px; font-weight: bold; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">Pay with Stripe</a>
         </div>
     </section>
-
-   
 
     <section class="section-three">
         <div class="text-container">

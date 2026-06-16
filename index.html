@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Static Single Page Layout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <style>
         * {
             box-sizing: border-box;
@@ -11,15 +14,22 @@
             padding: 0;
         }
         body {
-            font-family: sans-serif;
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f4efe6; /* Calming tan background */
             line-height: 1.6;
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: repeat(4, auto);
+            grid-template-rows: auto auto auto auto auto auto;
             min-height: 100vh;
         }
+        h1 {
+            font-family: 'Cookie', cursive;
+            font-size: 4rem;
+            color: #2c2520;
+            margin-bottom: 10px;
+        }
         section {
-            padding: 40px 20px;
+            padding: 50px 20px;
             width: 100%;
             max-width: 1200px;
             margin: 0 auto;
@@ -31,12 +41,18 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #f8f9fa;
+            padding: 20px 20px 40px 20px;
+        }
+        /* Full browser width sea blue structural bar */
+        .sea-blue-bar {
+            width: 100%;
+            height: 45px;
+            background-color: #1a5f7a; /* Sea blue */
         }
         .section-three, .section-four {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 30px;
+            gap: 40px;
             align-items: center;
         }
         .media-container img {
@@ -44,16 +60,33 @@
             height: auto;
             display: block;
             object-fit: cover;
+            border-radius: 6px;
+        }
+        footer {
+            width: 100%;
+            background-color: #2c2520;
+            color: #f4efe6;
+            padding: 40px 20px;
+            margin-top: auto;
+        }
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
         }
         @media (max-width: 768px) {
             .section-three, .section-four {
                 grid-template-columns: 1fr;
+                gap: 20px;
             }
             .section-four .text-container {
                 order: 2;
             }
             .section-four .media-container {
                 order: 1;
+            }
+            h1 {
+                font-size: 3rem;
             }
         }
     </style>
@@ -62,21 +95,23 @@
 
     <section class="section-one">
         <div class="text-container">
-            <h1>Main Heading Here</h1>
+            <h1>Website Title Here</h1>
             <p>Insert your introductory text, value proposition, or announcement in this top block.</p>
         </div>
     </section>
 
     <section class="section-two">
         <div class="link-container">
-            <a href="https://buy.stripe.com/mock" style="display: inline-block; background: #635bff; color: #fff; padding: 12px 24px; text-decoration: none; border-radius: 4px; font-weight: bold;">Pay with Stripe</a>
+            <a href="https://buy.stripe.com/mock" style="display: inline-block; background: #635bff; color: #fff; padding: 14px 28px; text-decoration: none; border-radius: 4px; font-weight: bold; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">Pay with Stripe</a>
         </div>
     </section>
+
+    <div class="sea-blue-bar"></div>
 
     <section class="section-three">
         <div class="text-container">
             <h2>Feature Heading One</h2>
-            <p>Detailed explanatory text corresponding to the adjacent imageasset goes right here.</p>
+            <p>Detailed explanatory text corresponding to the adjacent image asset goes right here.</p>
         </div>
         <div class="media-container">
             <img src="https://via.placeholder.com/600x400" alt="Placeholder Image One">
@@ -92,6 +127,12 @@
             <img src="https://via.placeholder.com/600x400" alt="Placeholder Image Two">
         </div>
     </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>Insert your text, contact details, copyright notes, or structural layout disclosures here.</p>
+        </div>
+    </footer>
 
 </body>
 </html>

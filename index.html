@@ -55,7 +55,17 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            gap: 20px; /* Space between the custom box and the Stripe button */
             padding: 20px 20px 40px 20px;
+        }
+        /* Style for the new box placed to the left of the Stripe link */
+        .custom-side-box {
+            background-color: #fff;
+            border: 1px solid #2c2520;
+            border-radius: 4px;
+            padding: 14px 20px;
+            color: #2c2520;
+            font-weight: 600;
         }
         /* Full browser width sea blue structural bar */
         .sea-blue-bar {
@@ -90,6 +100,10 @@
             text-align: center;
         }
         @media (max-width: 768px) {
+            .section-two {
+                flex-direction: column;
+                gap: 15px;
+            }
             .section-three, .section-four {
                 grid-template-columns: 1fr;
                 gap: 20px;
@@ -118,27 +132,30 @@
             <div class="sea-blue-bar"></div>
 
             <div class="about-block">
-    <h2 class="about-heading"><u> About </u></h2>
-    <hr style="border: 0; height: 1px; background: #2c2520; margin: 10px 0;">
-    
-    <p class="about-content"> 
-        Business Model: Exclusive lead generation & appointment setting.<br>
-        Focus: On delivering vetted customers & appointments to reliable contractors.<br>
-        Lead Types: Outbound homeowner leads. Pre-qualified customers, project details, and budgets.<br>
-        Contractor Types: Residential (Roofing, Remodeling, HVAC, etc.) All home services, repairs, installations, remodeling, specialty trades.<br>
-        <br>
-        Service Areas: Nationwide<br>
-        Pricing Model: Pay-Per-Lead, charged to the contractor (a flat lead fee, not a percentage of the total job earnings).<br>
-        Best For: Established residential contractors.<br>
-        Benefits: Affordable for small contractors and handymen.<br>
-        Phone Verified: Drastically reduces time wasted on fake numbers or uninterested people.<br>
-        Lead Exclusivity: 100% Exclusive (Never shared).
-    </p>
-</div>
-            
+                <h2 class="about-heading"><u> About </u></h2>
+                <hr style="border: 0; height: 1px; background: #2c2520; margin: 10px 0;">
+                
+                <p class="about-content"> 
+                    Business Model: Exclusive lead generation & appointment setting.<br>
+                    Focus: On delivering vetted customers & appointments to reliable contractors.<br>
+                    Lead Types: Outbound homeowner leads. Pre-qualified customers, project details, and budgets.<br>
+                    Contractor Types: Residential (Roofing, Remodeling, HVAC, etc.) All home services, repairs, installations, remodeling, specialty trades.<br>
+                    <br>
+                    Service Areas: Nationwide<br>
+                    Pricing Model: Pay-Per-Lead, charged to the contractor (a flat lead fee, not a percentage of the total job earnings).<br>
+                    Best For: Established residential contractors.<br>
+                    Benefits: Affordable for small contractors and handymen.<br>
+                    Phone Verified: Drastically reduces time wasted on fake numbers or uninterested people.<br>
+                    Lead Exclusivity: 100% Exclusive (Never shared).
+                </p>
+            </div>
+        </div>
     </section>
 
     <section class="section-two">
+        <div class="custom-side-box">
+            <p>Insert Side Content Here</p>
+        </div>
         <div class="link-container">
             <a href="https://buy.stripe.com/mock" style="display: inline-block; background: #635bff; color: #fff; padding: 14px 28px; text-decoration: none; border-radius: 4px; font-weight: bold; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">Pay with Stripe</a>
         </div>
@@ -164,9 +181,6 @@
                     <li> 
                       Certified Professional Development, Customer Care Skills and Telephone Etiquette Course, Alison: Online Courses, November 17, 2025.
                     </li>
-                    <!-- <li>
-                      <a href="url"> https://cdn01.alison-static.net/parchment-previews/1b196547f7c0671ff879e2c371ccd710.jpg </a> 
-                    </li> -->
                     <li>
                       Certified HTML Developer, W3Schools, Oct 2019. 
                     </li>  
@@ -191,11 +205,11 @@
             </p>
             
             <div>
-            <a href="/terms-of-service">Terms of Service</a>
+                <a href="/terms-of-service">Terms of Service</a>
             </div>
        
             <div>
-            <a href="https://instagram.com" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+                <a href="https://instagram.com" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
             </div>
         </div>
     </footer>

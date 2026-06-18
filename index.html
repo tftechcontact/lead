@@ -399,15 +399,25 @@
             background-color: #1a5f7a; /* Sea blue */
             margin: 20px 0;
         }
-        .media-container img {
+        /* INDIVIDUAL CONTROLS TO ADJUST BOX IMAGE WIDTHS DIRECTLY */
+        .section-three .media-container img {
+            max-width: 420px; /* Adjust this number to scale the PPL image perfectly */
             width: 100%;
             height: auto;
             display: block;
             object-fit: cover;
             border-radius: 6px;
-            /* ADJUST VALUE BELOW (e.g., 350px, 400px, 425px) TO CONTROL MAXIMUM IMAGE SIZE DIRECTLY */
-            max-width: 800px; 
-            margin: 0 auto; /* Keeps the image centered inside its designated grid column */
+            margin: 0 auto;
+        }
+
+        .section-four .media-container img {
+            max-width: 420px; /* Adjust this number to scale the About Me image perfectly */
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            border-radius: 6px;
+            margin: 0 auto;
         }
         footer {
             width: 100%;

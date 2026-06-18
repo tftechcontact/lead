@@ -16,14 +16,14 @@
         }
         body {
             font-family: 'Open Sans', sans-serif;
-            background-color: #cfbd9a; /* background */
+            background-color: #cfbd9a; 
             line-height: 1.6;
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: auto auto auto auto auto auto;
             min-height: 100vh;
             position: relative;
-            overflow-x: hidden; /* Prevents decorative elements from causing horizontal page scroll */
+            overflow-x: hidden; 
         }
 
         /* ------------------------------------------------------------------------- */
@@ -31,10 +31,9 @@
         /* ------------------------------------------------------------------------- */
         .bg-shape {
             position: absolute;
-            z-index: -1; /* Guarantees elements rest entirely behind layout containers and cards */
+            z-index: -1; 
         }
         
-        /* ROOF LINE & BROAD ARCHITECTURAL TRIANGLES - WIDER, NO LONGER SPIKY */
         .shape-roof {
             top: 0;
             left: 0;
@@ -47,32 +46,31 @@
         .shape-tri-1 {
             top: 420px;
             left: -30px;
-            width: 260px; /* Widened to display a massive geometric section */
+            width: 260px; 
             height: 220px;
             background-color: #756356;
             opacity: 0.12;
-            clip-path: polygon(0% 10%, 100% 20%, 60% 90%); /* Broad wedge block */
+            clip-path: polygon(0% 10%, 100% 20%, 60% 90%); 
         }
         .shape-tri-2 {
             top: 920px;
             left: -50px;
-            width: 290px; /* Widened drastically to bring more surface area onto the screen */
+            width: 290px; 
             height: 240px;
             background-color: #2c2520;
             opacity: 0.08;
-            clip-path: polygon(0% 0%, 100% 40%, 20% 100%); /* Substantial angular backdrop chunk */
+            clip-path: polygon(0% 0%, 100% 40%, 20% 100%); 
         }
         .shape-tri-3 {
             top: 1420px;
             left: -40px;
-            width: 280px; /* Substantial visible structural triangle face */
+            width: 280px; 
             height: 250px;
             background-color: #756356;
             opacity: 0.14;
-            clip-path: polygon(10% 0%, 100% 60%, 0% 80%); /* Blocky geometric remnant overlay */
+            clip-path: polygon(10% 0%, 100% 60%, 0% 80%); 
         }
 
-        /* ORIGINAL LARGE JUMBLED BACKGROUND COLLAGE CUBES */
         .shape-cube {
             top: 60px;
             left: 20px;
@@ -134,7 +132,6 @@
             transform: rotate(33deg);
         }
 
-        /* SMALL TIMBER-BROWN ACCENT CUBES */
         .shape-sm-cube-1 {
             top: 160px;
             left: 140px;
@@ -196,13 +193,12 @@
             transform: rotate(50deg);
         }
 
-        /* NEW MID-SIZED EARTH-BROWN CUBES (5 COUNT) */
         .shape-mid-cube-1 {
             top: 270px;
             left: 80px;
             width: 60px;
             height: 60px;
-            background-color: #42352b; /* Third unique earth brown shade */
+            background-color: #42352b; 
             opacity: 0.1;
             border-radius: 4px;
             transform: rotate(25deg);
@@ -248,7 +244,6 @@
             transform: rotate(62deg);
         }
 
-        /* EXTENDED DARK SILVER LINE BLOCK */
         .shape-line {
             top: 210px;
             left: 0;
@@ -277,7 +272,7 @@
             font-family: 'Cookie', cursive;
             font-size: 4rem;
             color: #2c2520;
-            margin-top: 60px; /* Adjust this value (e.g., 0px, 10px, 20px) to control the top space */
+            margin-top: 60px; 
             margin-bottom: 10px;
         }
         
@@ -288,7 +283,7 @@
             padding: 20px;
             width: 100%;
             border-radius: 4px;
-            margin-bottom: 30px; /* SPACE BELOW HERO BANNER */
+            margin-bottom: 30px; 
         }
         .hero-title {
             font-family: 'Cookie', cursive;
@@ -325,19 +320,21 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); 
             text-align: left;
             width: 100%;
-            margin-bottom: 30px; /* SPACE BETWEEN ABOUT BLOCK & CONTACT CARDS */
+            margin-bottom: 30px; 
         }
         .section-two-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 40px;
             width: 100%;
-            margin-bottom: 30px; /* SPACE BETWEEN CONTACT CARDS & PPL AGENT BLOCK */
+            margin-bottom: 30px; 
         }  
+        
+        /* CHANGED TO 50% 50% SO IMAGES HAVE ROOM TO GROW */
         .section-three {
             display: grid;
-            grid-template-columns: 3.5fr 3fr;
-            gap: 100px;
+            grid-template-columns: 50% 50%;
+            gap: 60px;
             align-items: center;
             background-color: #f4efe6; 
             border: 4px solid #756356; 
@@ -346,12 +343,12 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); 
             text-align: left;
             width: 100%;
-            margin-bottom: 30px; /* SPACE BETWEEN PPL AGENT BLOCK & ABOUT ME BLOCK */
+            margin-bottom: 30px; 
         }
         .section-four {
             display: grid;
-            grid-template-columns: 3.5fr 3fr;
-            gap: 100px;
+            grid-template-columns: 50% 50%;
+            gap: 60px;
             align-items: center;
             background-color: #f4efe6; 
             border: 4px solid #756356; 
@@ -360,7 +357,7 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); 
             text-align: left;
             width: 100%;
-            margin-bottom: 60px; /* SPACE BETWEEN ABOUT ME BLOCK & FOOTER BAR */
+            margin-bottom: 60px; 
         }
         .contact-card, .checkout-card {
             background-color: #f4efe6;
@@ -396,29 +393,30 @@
         .sea-blue-bar {
             width: 100%;
             height: 45px;
-            background-color: #1a5f7a; /* Sea blue */
+            background-color: #1a5f7a; 
             margin: 20px 0;
         }
-        /* INDIVIDUAL CONTROLS TO ADJUST BOX IMAGE WIDTHS DIRECTLY */
+
+        /* DIRECT CUSTOMCONTROLS FOR IMAGES INSIDE THE GRID */
         .section-three .media-container img {
-            max-width: 1000px; /* Adjust this number to scale the PPL image perfectly */
+            max-width: 480px; /* CHANGE THIS VALUE DIRECTLY TO ADJUST THE PPL IMAGE SIZE */
             width: 100%;
             height: auto;
             display: block;
             object-fit: cover;
             border-radius: 6px;
-            margin: 0 auto;
+            margin: 0 auto; 
+        }
+        .section-four .media-container img {
+            max-width: 480px; /* CHANGE THIS VALUE DIRECTLY TO ADJUST THE ABOUT ME IMAGE SIZE */
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            border-radius: 6px;
+            margin: 0 auto; 
         }
 
-        .section-four .media-container img {
-            max-width: 1000px; /* Adjust this number to scale the About Me image perfectly */
-            width: 100%;
-            height: auto;
-            display: block;
-            object-fit: cover;
-            border-radius: 6px;
-            margin: 0 auto;
-        }
         footer {
             width: 100%;
             background-color: #2c2520;
@@ -471,7 +469,7 @@
                 font-size: 1.8rem;
             }
             .bg-shape {
-                display: none; /* Disables decorative elements on smaller mobile viewports */
+                display: none; 
             }
         }
     </style>

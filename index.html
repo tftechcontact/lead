@@ -330,11 +330,11 @@
             margin-bottom: 30px; 
         }  
         
-        /* HEIGHT AUTO AND OVERFLOW HIDDEN APPLIED TO STOP BLEEDING */
+        /* ADJUSTED RATIOS TO PREVENT RIGHT BORDER OVERFLOW */
         .section-three {
             display: grid;
-            grid-template-columns: 50% 50%;
-            gap: 60px;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 40px;
             align-items: center;
             background-color: #f4efe6; 
             border: 4px solid #756356; 
@@ -349,8 +349,8 @@
         }
         .section-four {
             display: grid;
-            grid-template-columns: 50% 50%;
-            gap: 60px;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 40px;
             align-items: center;
             background-color: #f4efe6; 
             border: 4px solid #756356; 
@@ -401,22 +401,22 @@
             margin: 20px 0;
         }
 
-        /* DIRECT CUSTOM CONTROLS FOR IMAGES INSIDE THE GRID */
+        /* FIXED HEIGHT CONTROLS AND REMOVED CONDENSED SQUISHING WITH FIT-CONTAIN */
         .section-three .media-container img {
-            max-width: 480px; /* CHANGE THIS VALUE DIRECTLY TO ADJUST THE PPL IMAGE SIZE */
             width: 100%;
-            height: auto;
+            max-width: 420px;  
+            height: 320px;     /* Set explicit height control */
             display: block;
-            object-fit: cover;
+            object-fit: contain; /* Keeps accurate aspect ratio without squishing */
             border-radius: 6px;
             margin: 0 auto; 
         }
         .section-four .media-container img {
-            max-width: 480px; /* CHANGE THIS VALUE DIRECTLY TO ADJUST THE ABOUT ME IMAGE SIZE */
             width: 100%;
-            height: auto;
+            max-width: 420px;  
+            height: 320px;     /* Set explicit height control */
             display: block;
-            object-fit: cover;
+            object-fit: contain; /* Keeps accurate aspect ratio without squishing */
             border-radius: 6px;
             margin: 0 auto; 
         }
@@ -474,6 +474,10 @@
             }
             .bg-shape {
                 display: none; 
+            }
+            .section-three .media-container img, 
+            .section-four .media-container img {
+                height: auto; /* Restores flexible height for accurate mobile stacking */
             }
         }
     </style>

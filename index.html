@@ -330,7 +330,7 @@
             margin-bottom: 30px; 
         }  
         
-        /* CHANGED TO 50% 50% SO IMAGES HAVE ROOM TO GROW */
+        /* HEIGHT AUTO AND OVERFLOW HIDDEN APPLIED TO STOP BLEEDING */
         .section-three {
             display: grid;
             grid-template-columns: 50% 50%;
@@ -343,6 +343,8 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); 
             text-align: left;
             width: 100%;
+            height: auto;
+            overflow: hidden;
             margin-bottom: 30px; 
         }
         .section-four {
@@ -357,6 +359,8 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); 
             text-align: left;
             width: 100%;
+            height: auto;
+            overflow: hidden;
             margin-bottom: 60px; 
         }
         .contact-card, .checkout-card {
@@ -397,7 +401,7 @@
             margin: 20px 0;
         }
 
-        /* DIRECT CUSTOMCONTROLS FOR IMAGES INSIDE THE GRID */
+        /* DIRECT CUSTOM CONTROLS FOR IMAGES INSIDE THE GRID */
         .section-three .media-container img {
             max-width: 480px; /* CHANGE THIS VALUE DIRECTLY TO ADJUST THE PPL IMAGE SIZE */
             width: 100%;

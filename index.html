@@ -330,10 +330,9 @@
             margin-bottom: 30px; 
         }  
         
-        /* ADJUSTED RATIOS TO PREVENT RIGHT BORDER OVERFLOW */
         .section-three {
             display: grid;
-            grid-template-columns: 1.2fr 1fr;
+            grid-template-columns: 1fr 1fr;
             gap: 40px;
             align-items: center;
             background-color: #f4efe6; 
@@ -343,13 +342,11 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); 
             text-align: left;
             width: 100%;
-            height: auto;
-            overflow: hidden;
             margin-bottom: 30px; 
         }
         .section-four {
             display: grid;
-            grid-template-columns: 1.2fr 1fr;
+            grid-template-columns: 1fr 1fr;
             gap: 40px;
             align-items: center;
             background-color: #f4efe6; 
@@ -359,8 +356,6 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); 
             text-align: left;
             width: 100%;
-            height: auto;
-            overflow: hidden;
             margin-bottom: 60px; 
         }
         .contact-card, .checkout-card {
@@ -401,22 +396,20 @@
             margin: 20px 0;
         }
 
-        /* FIXED HEIGHT CONTROLS AND REMOVED CONDENSED SQUISHING WITH FIT-CONTAIN */
+        /* HARD-CODED DIRECT SIZES THAT WILL ACTUALLY ENGAGE THE IMAGES NOW */
         .section-three .media-container img {
-            width: 100%;
-            max-width: 620px;  
-            height: 520px;     /* Set explicit height control */
+            width: 460px;       /* Increase or decrease this number to change image width */
+            height: 340px;      /* Increase or decrease this number to change image height */
             display: block;
-            object-fit: contain; /* Keeps accurate aspect ratio without squishing */
+            object-fit: fill;   /* Forces the image file itself to fill the exact size declared above */
             border-radius: 6px;
             margin: 0 auto; 
         }
         .section-four .media-container img {
-            width: 100%;
-            max-width: 620px;  
-            height: 520px;     /* Set explicit height control */
+            width: 460px;       /* Increase or decrease this number to change image width */
+            height: 340px;      /* Increase or decrease this number to change image height */
             display: block;
-            object-fit: contain; /* Keeps accurate aspect ratio without squishing */
+            object-fit: fill;   /* Forces the image file itself to fill the exact size declared above */
             border-radius: 6px;
             margin: 0 auto; 
         }
@@ -477,7 +470,8 @@
             }
             .section-three .media-container img, 
             .section-four .media-container img {
-                height: auto; /* Restores flexible height for accurate mobile stacking */
+                width: 100%;
+                height: auto;
             }
         }
     </style>
